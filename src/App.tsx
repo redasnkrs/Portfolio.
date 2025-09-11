@@ -251,9 +251,11 @@ function ContactMe() {
       <div className=''>
         <h2 className='text-4xl text-center mb-10'>Contact me</h2>
         <div className='container-4xl glass-card'>
-
-          <p className='py-5  '>If you wanna get in touch with me feel free to send me a email !</p>
-          <a className="pill hover:bg-[rgba(255,255,255,0.08)]" href="mailto:redadahman34@gmail.com">Email</a>
+          <p className='py-5  '>If you wanna know more about me feel free to contact me ! </p>
+          <div className='flex flex-wrap gap-3'>
+            <a className="pill hover:bg-[rgba(255,255,255,0.08)]" href="mailto:redadahman34@gmail.com">Email</a>
+            <a className="pill hover:bg-[rgba(255,255,255,0.08)]" href="phoneto:0488981759">Phone</a>
+          </div>
         </div>
       </div>
     </section>
@@ -263,11 +265,27 @@ function ContactMe() {
 function TodoList() {
   return (
     <section className='section'>
-      <h2 className='text-4xl mb-4 text-center'>My Todo-List </h2>
+      <h2 className='text-4xl mb-4 text-center'>My goals I want to reach </h2>
       <div className='glass-card container-4xl'>
-        <p className='p-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sint et esse. Ex atque tempore voluptates assumenda saepe magni neque architecto. Fuga, dignissimos! Magnam, sequi? </p>
-      </div>
 
+        {/* Simple todo list for reached and future goals */}
+        <div className="mb-8">
+          <h3 className="text-2xl mb-2">✅ Goals Reached</h3>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Learned React fundamentals</li>
+            <li>Built my personal portfolio website</li>
+            <li>Completed several web projects</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-2xl mb-2">🎯 Goals To Reach</h3>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Master TypeScript</li>
+            <li>Contribute to open source projects</li>
+            <li>Land a frontend developer internship</li>
+          </ul>
+        </div>
+      </div>
     </section>
   )
 }
