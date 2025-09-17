@@ -1,11 +1,22 @@
-import { useMemo } from 'react';
+import { useMemo } from "react";
 
 export function About() {
   const skills = useMemo(
     () => [
-      'React', 'TypeScript', 'Node.js', 'Next.js', 'SQL', 'Tailwind', 'PHP', 'Docker', 'symfony', 'WordPress', 'Express', 'Linux', 'Python',
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Next.js",
+      "SQL",
+      "Tailwind",
+      "PHP",
+      "Docker",
+      "symfony",
+      "WordPress",
+      "Express",
+      "Linux",
     ],
-    []
+    [],
   );
   return (
     <section id="about" className="section">
@@ -13,23 +24,46 @@ export function About() {
         <div className="glass-card">
           <h3 className="text-4xl mb-4">About Me</h3>
           <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed">
-            My name is Reda i'm 22 years old. I'm passionate about developpement. Learn the full-stack web-dev in CF2M I now ready to work and ship website with your company.
+            My name is Reda i'm 22 years old. I'm passionate about
+            developpement. Learn the full-stack web-dev in CF2M I now ready to
+            work and ship website with your company.
           </p>
         </div>
         <div className="glass-card">
           <h4 className="text-xl mb-3">Skills</h4>
           <div className="flex flex-wrap gap-2">
             {skills.map((s) => (
-              <span key={s} className="pill">{s}</span>
+              <span key={s} className="pill">
+                {s}
+              </span>
             ))}
           </div>
         </div>
         <div className="glass-card lg:col-span-2">
           <h4 className="text-xl mb-3">Contact</h4>
           <div className="flex flex-wrap gap-3">
-            <a className="pill hover:bg-[rgba(255,255,255,0.08)]" href="mailto:redadahman34@gmail.com">Email</a>
-            <a className="pill hover:bg-[rgba(255,255,255,0.08)]" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a className="pill hover:bg-[rgba(255,255,255,0.08)]" href="https://github.com/redasnkrs" target="_blank" rel="noreferrer">GitHub</a>
+            <a
+              className="pill hover:bg-[rgba(255,255,255,0.08)]"
+              href="mailto:redadahman34@gmail.com"
+            >
+              Email
+            </a>
+            <a
+              className="pill hover:bg-[rgba(255,255,255,0.08)]"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="pill hover:bg-[rgba(255,255,255,0.08)]"
+              href="https://github.com/redasnkrs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </div>
