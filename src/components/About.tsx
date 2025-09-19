@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { about } from "../data/about";
+import { aboutMe } from "../data/about.json";
 
 export function About() {
   const skills = useMemo(
@@ -25,9 +25,7 @@ export function About() {
         <div className="glass-card">
           <h3 className="text-4xl mb-4">About Me</h3>
           <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed">
-            My name is Reda i'm 22 years old. I'm passionate about
-            developpement. Learn the full-stack web-dev in CF2M I now ready to
-            work and ship website with your company.
+            {aboutMe}
           </p>
         </div>
         <div className="glass-card">
