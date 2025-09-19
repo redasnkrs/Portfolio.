@@ -1,9 +1,7 @@
-export const about: About[] = [
-  {
-    company: "CF2M",
-    position: "Full stack web-dev",
-    period: "2024 - Present",
-    description: "Learn the basics of web-developement and more advanced.",
-    technologies: ["Symfony", "Node.js", "Docker", "SQL", "WordPress", "Linux"],
-  },
-];
+export type About = {
+  aboutme: string;
+};
+export const About: About = {
+  aboutme:
+    "I'm 22 years old and i love the web dev. I learn the basics in CF2M. I'm a passionate",
+};

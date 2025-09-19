@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { about } from "../data/about";
 
 export function About() {
   const skills = useMemo(
