@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { aboutMe } from "../data/about.json";
+import { aboutme } from "../data/info.json";
 
 export function About() {
   const skills = useMemo(
@@ -25,7 +25,7 @@ export function About() {
         <div className="glass-card">
           <h3 className="text-4xl mb-4">About Me</h3>
           <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed">
-            {aboutMe}
+            {aboutme}
           </p>
         </div>
         <div className="glass-card">
@@ -49,7 +49,7 @@ export function About() {
             </a>
             <a
               className="pill hover:bg-[rgba(255,255,255,0.08)]"
-              href="https://linkedin.com"
+              href="https://linkedin.com/reda-dahmani/"
               target="_blank"
               rel="noreferrer"
             >

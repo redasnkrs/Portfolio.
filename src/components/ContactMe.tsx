@@ -1,4 +1,4 @@
-import { contactMe } from "../data/contact.json";
+import { contactme } from "../data/info.json";
 
 export function ContactMe() {
   return (
@@ -6,7 +6,7 @@ export function ContactMe() {
       <div className="">
         <h2 className="text-4xl text-center mb-10">Contact me</h2>
         <div className="container-4xl glass-card">
-          <p className="py-5  ">{contactMe}</p>
+          <p className="py-5  ">{contactme}</p>
           <div className="flex flex-wrap gap-3">
             <a
               className="pill hover:bg-[rgba(255,255,255,0.08)]"
