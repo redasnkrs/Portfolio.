@@ -1,4 +1,4 @@
-import { experiences } from '../data/experience';
+import { experiences } from "../data/experience";
 
 export function ExperienceSection() {
   return (
@@ -9,10 +9,16 @@ export function ExperienceSection() {
           {experiences.map((e) => (
             <div key={e.company + e.position} className="glass-card">
               <div className="flex items-start justify-between">
-                <div className="text-white text-xl">{e.company} — {e.position}</div>
-                <div className="text-sm text-[rgba(255,255,255,0.79)]">{e.period}</div>
+                <div className="text-white text-xl">
+                  {e.company} — {e.position}
+                </div>
+                <div className="text-sm text-[rgba(255,255,255,0.79)]">
+                  {e.period}
+                </div>
               </div>
-              <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed mt-3">{e.description}</p>
+              <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed mt-3">
+                {e.description}
+              </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {e.technologies.map((t) => (
                   <span key={t} className="pill">

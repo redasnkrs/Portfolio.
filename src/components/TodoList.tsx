@@ -1,14 +1,16 @@
+import { todo } from "../data/todo";
+
 export function TodoList() {
   return (
-    <section className='section'>
-      <h2 className='text-4xl mb-4 text-center'>My goals I want to reach </h2>
-      <div className='glass-card container-4xl'>
+    <section className="section">
+      <h2 className="text-4xl mb-4 text-center">{todo.title} </h2>
 
+      <div className="glass-card container-4xl">
         {/* Simple todo list for reached and future goals */}
         <div className="mb-8">
           <h3 className="text-2xl mb-2">✅ Goals Reached</h3>
           <ul className="list-disc pl-6 space-y-1">
-            <li>Learned React fundamentals</li>
+            <li>{todo.goalReached} </li>
             <li>Built my personal portfolio website</li>
             <li>Completed several web projects</li>
           </ul>
