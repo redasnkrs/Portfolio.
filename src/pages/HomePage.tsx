@@ -4,19 +4,21 @@ import { ExperienceSection } from "../components/Experience";
 import { FloatingNav } from "../components/FloatingNav";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
-import { Profile } from "../components/Profile";
 import { TodoList } from "../components/TodoList";
+// import { Profile } from "../components/Profile";
+import { SecretProfile } from "../components/SecretProfile";
 
 export function HomePage() {
   return (
     <div>
-      <Profile />
+      {/*<Profile />*/}
       <Hero />
       <About />
       <ExperienceSection />
       <Projects />
       <ContactMe />
       <TodoList />
+      <SecretProfile />
       <FloatingNav />
     </div>
   );

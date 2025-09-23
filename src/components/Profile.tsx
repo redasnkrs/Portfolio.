@@ -1,5 +1,5 @@
 function handleClick() {
-  alert("Hello");
+  alert(Profile);
 }
 
 export function Profile() {
