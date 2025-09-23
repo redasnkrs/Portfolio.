@@ -8,7 +8,7 @@ export function SecretProfile() {
           </h2>
           <div>
             <h3>Name:</h3>
-            <p className="font-cusom">Reda Dahmani</p>
+            <p className="font-custom">Reda Dahmani</p>
           </div>
         </div>
       </div>
