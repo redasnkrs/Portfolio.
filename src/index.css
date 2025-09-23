@@ -9,6 +9,20 @@ body {
   @apply bg-black text-white font-mono;
 }
 
+/*
+  Add this block and replace 'YourFontName' and the file paths.
+*/
+@font-face {
+  font-family: "Satoshi-Regular";
+  src:
+    url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff"),
+    url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 /* Utility tokens from spec */
 .container-4xl {
   @apply max-w-4xl mx-auto px-8;
@@ -35,4 +49,8 @@ body {
   @apply px-3 py-1 rounded-full border text-xs;
   border-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.79);
+}
+
+.font-custom {
+  font-family: serif;
 }
