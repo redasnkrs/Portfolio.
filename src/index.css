@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Global base per spec */
 html {
@@ -12,6 +13,8 @@ body {
 /*
   Add this block and replace 'YourFontName' and the file paths.
 */
+
+/* Satoshi Regular*/
 @font-face {
   font-family: "Satoshi-Regular";
   src:
@@ -23,9 +26,18 @@ body {
   font-style: normal;
 }
 
+/*Roboto */
+
 .font-custom {
   font-family: "Satoshi-Regular";
 }
+
+/*h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto";
+}*/
 
 /* Utility tokens from spec */
 .container-4xl {

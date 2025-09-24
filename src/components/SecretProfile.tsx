@@ -10,6 +10,10 @@ export function SecretProfile() {
             <h3>Name:</h3>
             <p className="font-custom">Reda Dahmani</p>
           </div>
+          <div>
+            <h3>Age:</h3>
+            <p className="fon-custom">22 years old</p>
+          </div>
         </div>
       </div>
     </section>
