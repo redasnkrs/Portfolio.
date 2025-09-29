@@ -1,3 +1,4 @@
+import { name, age, title, bio } from "../data/info.json";
 export function SecretProfile() {
   return (
     <section
@@ -12,23 +13,19 @@ export function SecretProfile() {
           <div className="flex flex-col justify-between gap-5">
             <div>
               <h3>Name:</h3>
-              <p className="font-custom">Reda Dahmani</p>
+              <p className="font-custom">{name}</p>
             </div>
             <div>
               <h3>Age:</h3>
-              <p className="fon-custom">22 years old</p>
+              <p className="fon-custom">{age}</p>
             </div>
             <div>
               <h3>Title/Headline:</h3>
-              <p className="font-custom">
-                Full-stack developper, Software developper
-              </p>
+              <p className="font-custom">{title}</p>
             </div>
             <div>
               <h3>Bio:</h3>
-              <p className="font-custom">
-                I build and scale web application from concept to completion.
-              </p>
+              <p className="font-custom">{bio}</p>
             </div>
             <div>
               <h3>My social links:</h3>
