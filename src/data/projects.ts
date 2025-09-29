@@ -16,6 +16,12 @@ export const projects: Project[] = [
     description: "Full-stack website i built with a friend from scratch.",
     technologies: ["Next.js", "Stripe", "SQL"],
   },
+  {
+    title: "LuxyCar",
+    description: "The nex level when is about renting a car.",
+    technologies: ["React", "TypeScript"],
+
+  },
   // {
   //   title: "modo.studio",
   //   description: "Full-stack ",
