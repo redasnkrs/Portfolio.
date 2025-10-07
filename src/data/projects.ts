@@ -18,9 +18,8 @@ export const projects: Project[] = [
   },
   {
     title: "LuxyCar",
-    description: "The nex level when is about renting a car.",
+    description: "The next level when is about renting a car.",
     technologies: ["React", "TypeScript"],
-
   },
   // {
   //   title: "modo.studio",
