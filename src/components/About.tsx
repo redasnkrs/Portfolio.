@@ -20,7 +20,7 @@ export function About() {
   //   [],
   // );
   return (
-    <section id="about" className="section ml-5">
+    <section id="about" className="section ml-12">
       <div className="">
         <h2 className="text-9xl mb-4">About Me</h2>
       </div>

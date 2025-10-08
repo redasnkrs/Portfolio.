@@ -2,7 +2,7 @@ import { experiences } from "../data/experience";
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="section">
+    <section id="experience" className="section ml-12">
       <h2 className="text-9xl mb-15">Experience</h2>
       <div className="container-4xl">
         <div className="grid gap-6">
