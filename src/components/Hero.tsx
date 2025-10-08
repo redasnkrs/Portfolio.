@@ -39,7 +39,7 @@ export function Hero({
       </div>
       <div>
         <button className="p-3  rounded bg-white text-black font-semibold">
-          <a href="#project">Get in touch</a>
+          <a href="">Get in touch</a>
         </button>
       </div>
     </header>

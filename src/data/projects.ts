@@ -12,12 +12,12 @@ export const projects: Project[] = [
     technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
-    title: "GhostFrom",
+    title: "GhostFrom (Developpement)",
     description: "Full-stack website i built with a friend from scratch.",
     technologies: ["Next.js", "Stripe", "SQL"],
   },
   {
-    title: "LuxyCar",
+    title: "LuxyCar (Developpement)",
     description: "The next level when is about renting a car.",
     technologies: ["React", "TypeScript", "NodeJs"],
   },
