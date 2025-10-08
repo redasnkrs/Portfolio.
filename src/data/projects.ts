@@ -9,7 +9,7 @@ export const projects: Project[] = [
   {
     title: "Kikotch",
     description: "Built a WordPress website.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Tailwind"],
+    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "GhostFrom",
@@ -19,11 +19,6 @@ export const projects: Project[] = [
   {
     title: "LuxyCar",
     description: "The next level when is about renting a car.",
-    technologies: ["React", "TypeScript"],
+    technologies: ["React", "TypeScript", "NodeJs"],
   },
-  // {
-  //   title: "modo.studio",
-  //   description: "Full-stack ",
-  //   technologies: ["react"],
-  // },
 ];
