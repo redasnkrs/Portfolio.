@@ -26,7 +26,10 @@
 // }
 //
 
-export function Hero({ title = "Reda", subtitle = "Full-stack Developer" }) {
+export function Hero({
+  title = "Reda",
+  subtitle = "Junior Full-stack Developer",
+}) {
   return (
     <header className="hero">
       <div className="hero__grid" aria-hidden="true" />

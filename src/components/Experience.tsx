@@ -3,8 +3,8 @@ import { experiences } from "../data/experience";
 export function ExperienceSection() {
   return (
     <section id="experience" className="section">
+      <h2 className="text-9xl mb-12">Experience</h2>
       <div className="container-4xl">
-        <h3 className="text-4xl mb-12">Experience</h3>
         <div className="grid gap-6">
           {experiences.map((e) => (
             <div key={e.company + e.position} className="glass-card">
