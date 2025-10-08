@@ -37,6 +37,11 @@ export function Hero({
         <h1 className="hero__title">{title}</h1>
         {subtitle ? <p className="hero__subtitle">{subtitle}</p> : null}
       </div>
+      <div>
+        <button className="p-3  rounded bg-white text-black font-semibold">
+          <a href="#project">Get in touch</a>
+        </button>
+      </div>
     </header>
   );
 }
