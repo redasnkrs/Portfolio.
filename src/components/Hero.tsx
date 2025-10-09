@@ -36,11 +36,11 @@ export function Hero({
       <div className="hero__inner">
         <h1 className="hero__title">{title}</h1>
         {subtitle ? <p className="hero__subtitle">{subtitle}</p> : null}
-      </div>
-      <div>
-        <button className="p-3  rounded bg-white text-black font-semibold">
-          <a href="">Get in touch</a>
-        </button>
+        <div className="mt-10">
+          <button className="p-3 rounded bg-white text-black font-semibold hover:bg-gray-300 cursor-pointer transition-all">
+            <a href="">Get in touch</a>
+          </button>
+        </div>
       </div>
     </header>
   );
