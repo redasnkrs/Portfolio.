@@ -14,7 +14,7 @@ export function Projects() {
               target={p.link ? "_blank" : undefined}
               rel={p.link ? "noreferrer" : undefined}
             >
-              <h4 className="text-xl text-white">{p.title}</h4>
+              <p className="text-xl text-white">{p.title}</p>
               <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed mt-2">
                 {p.description}
               </p>

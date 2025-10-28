@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["Satoshi-Regular", "sans-serif"],
+        custom: ["ClashDisplay", "sans-serif"],
       },
     },
   },
