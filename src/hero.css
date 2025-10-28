@@ -2,7 +2,7 @@
 
 /* Design tokens for quick tuning */
 :root {
-  --hero-height: clamp(800px, 30vh, 360px);
+  --hero-height: clamp(100vh, 30vh, 360px);
   --grid-color: rgba(255, 255, 255, 0.08); /* line color */
   --grid-color-strong: rgba(255, 255, 255, 0.12); /* accent every Nth line */
   --grid-gap: 240px; /* distance between lines */
