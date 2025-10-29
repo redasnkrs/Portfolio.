@@ -17,6 +17,7 @@
 /* Dark mode support is automatic; if your app has a theme, override variables in a theme class */
 
 .hero {
+  margin-top: 40px;
   position: relative;
   display: grid;
   place-items: center;

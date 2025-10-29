@@ -41,9 +41,11 @@ export function Hero({
             <a href="mailto:redadahmani34@gmail.com">Get in touch</a>
           </button>
         </div>
-        <div className="mt-100">
-          <button className="">
-            <a href="#about">II</a>
+        <div className="mt-50">
+          <button className="animate-bounce ease-in-out">
+            <a href="#about" className="text-2xl ">
+              ↓
+            </a>
           </button>
         </div>
       </div>
