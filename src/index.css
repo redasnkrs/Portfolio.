@@ -8,16 +8,6 @@ html {
 
 body {
   @apply bg-black text-white font-mono;
-  animation: fadeIn 2.5s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*
@@ -45,6 +35,11 @@ h3,
 h4 {
   font-family: "ClashDisplay";
   font-weight: bolder;
+  animation: fadeIn 2.7s ease-in;
+}
+
+nav {
+  animation: slideIn 2s ease;
 }
 
 /* Utility tokens from spec */
@@ -73,4 +68,23 @@ h4 {
   @apply px-3 py-1 rounded-full border text-xs;
   border-color: rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.79);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(130%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

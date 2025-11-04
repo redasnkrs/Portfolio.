@@ -36,7 +36,7 @@ export function Hero({
       <div className="hero__inner">
         <h1 className="hero__title">{title}</h1>
         {subtitle ? <p className="hero__subtitle">{subtitle}</p> : null}
-        <div className="mt-10">
+        <div className="mt-10 hero_elements">
           <button className="p-3 rounded bg-white text-black font-semibold hover:bg-gray-300 cursor-pointer transition-all">
             <a href="mailto:redadahmani34@gmail.com">Get in touch</a>
           </button>
