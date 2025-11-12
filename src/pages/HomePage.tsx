@@ -5,7 +5,7 @@ import { ExperienceSection } from "../components/Experience";
 import { FloatingNav } from "../components/FloatingNav";
 import { Hero } from "../components/Hero";
 import { Projects } from "../components/Projects";
-import ClickSpark from "../components/ClickSpark";
+import ClickSpark from "../components/animations/ClickSpark";
 
 export function HomePage() {
   return (

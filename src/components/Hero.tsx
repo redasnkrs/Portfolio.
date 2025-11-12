@@ -26,7 +26,7 @@
 // }
 //
 
-import SplitText from "./SplitText";
+import SplitText from "./animations/SplitText";
 
 export function Hero() {
   return (
