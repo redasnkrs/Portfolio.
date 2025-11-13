@@ -24,7 +24,7 @@ export function About() {
       <div className="">
         <h2 className="text-9xl mb-4">About Me</h2>
       </div>
-      <div className="container-xl flex gap-96 ml-5 items-center">
+      <div className="container-xl flex justify-around  ml-5 items-center">
         <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed w-150">
           {aboutme}
         </p>
