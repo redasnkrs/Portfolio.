@@ -1,6 +1,11 @@
-import { Home, FolderGit2, BriefcaseBusiness, User2 } from "lucide-react";
+import { Home, FolderGit2, BriefcaseBusiness, User2, Mail } from "lucide-react";
 
-export type SectionId = "home" | "projects" | "experience" | "about"; //| "goals";
+export type SectionId =
+  | "home"
+  | "projects"
+  | "experience"
+  | "about"
+  | "contactMe"; //| "goals";
 
 export const sections: {
   id: SectionId;
@@ -11,5 +16,5 @@ export const sections: {
   { id: "about", label: "About", icon: User2 },
   { id: "experience", label: "Experience", icon: BriefcaseBusiness },
   { id: "projects", label: "Projects", icon: FolderGit2 },
-  //{ id: "goals", label: "Goals", icon: FolderGit2 },
+  { id: "contactMe", label: "Contact", icon: Mail },
 ];
