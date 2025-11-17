@@ -30,7 +30,7 @@ import SplitText from "./animations/SplitText";
 
 export function Hero() {
   return (
-    <header className="hero">
+    <header id="home" className="hero">
       <div className="hero__grid" aria-hidden="true" />
       <div className="hero__inner">
         <SplitText
