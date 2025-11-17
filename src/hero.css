@@ -10,7 +10,7 @@
   --bg-color: #0b0b0b; /* header background */
   --text-color: #ffffff;
   --title-tracking: 0.08em; /* letter spacing */
-  --title-size: clamp(300px, 8vw, 120px);
+  --title-size: clamp(80px, 20vw, 280px);
   --subtitle-size: clamp(12px, 2vw, 18px);
 }
 

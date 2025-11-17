@@ -33,30 +33,16 @@ export function Hero() {
     <header id="home" className="hero">
       <div className="hero__grid" aria-hidden="true" />
       <div className="hero__inner">
-        <SplitText
-          text="Reda"
-          className="text-2xl font-semibold text-center hero__title"
-          delay={220}
-          duration={0.8}
-          ease="power3.out"
-          splitType="chars"
-          from={{ opacity: 0, y: 40 }}
-          to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-100px"
-          textAlign="center"
-          onLetterAnimationComplete={() => {}}
-        />
-        {/*<h1 className="hero__title">{title}</h1>
-        {subtitle ? <p className="hero__subtitle">{subtitle}</p> : null}*/}
-        <div className="mt-10 hero_elements">
+        <h1 className="hero__title">Reda</h1>
+        <p className="hero__subtitle">Full-Stack Developer</p>
+        <div className="mt-8 hero_elements">
           <button className="p-3 rounded bg-white text-black font-semibold hover:bg-gray-300 cursor-pointer transition-all">
             <a href="#contactMe">Get in touch</a>
           </button>
         </div>
-        <div className="mt-50">
+        <div className="mt-16">
           <button className="animate-bounce ease-in-out">
-            <a href="#about" className="text-2xl ">
+            <a href="#about" className="text-2xl">
               ↓
             </a>
           </button>

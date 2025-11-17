@@ -20,18 +20,18 @@ export function About() {
   //   [],
   // );
   return (
-    <section id="about" className="section ml-12">
-      <div className="">
-        <h2 className="text-9xl mb-4">About Me</h2>
+    <section id="about" className="section px-4 sm:px-6 lg:px-8">
+      <div className="lg:text-left text-center">
+        <h2 className="text-7xl sm:text-7xl lg:text-9xl mb-8">About Me</h2>
       </div>
-      <div className="container-xl flex justify-around  ml-5 items-center">
-        <p className="text-sm text-[rgba(255,255,255,0.7)] leading-relaxed w-150">
+      <div className="container-xl flex flex-col lg:flex-row justify-around items-center gap-12 lg:gap-8">
+        <p className="text-base sm:text-lg text-[rgba(255,255,255,0.7)] leading-relaxed max-w-2xl lg:max-w-lg text-center lg:text-left">
           {aboutme}
         </p>
-        <div className="w-125 h-125 overflow-hidden rounded-lg">
+        <div className="w-full max-w-sm lg:max-w-md h-auto overflow-hidden rounded-lg">
           <img
             src="/assets/lan.jpeg"
-            alt=""
+            alt="Lan"
             className="h-full w-full object-cover"
           />
         </div>

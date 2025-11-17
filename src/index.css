@@ -48,14 +48,14 @@ nav {
 
 /* Utility tokens from spec */
 .container-4xl {
-  @apply max-w-4xl mx-auto px-8;
+  @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 .container-6xl {
-  @apply max-w-6xl mx-auto px-8;
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .section {
-  @apply py-20 pb-32; /* vertical padding with extra bottom for floating nav */
+  @apply py-16 sm:py-20 pb-24 sm:pb-32; /* vertical padding with extra bottom for floating nav */
 }
 
 .glass-card {
