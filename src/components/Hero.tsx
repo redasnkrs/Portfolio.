@@ -33,7 +33,19 @@ export function Hero() {
     <header id="home" className="hero">
       <div className="hero__grid" aria-hidden="true" />
       <div className="hero__inner">
-        <h1 className="hero__title">Reda</h1>
+        <SplitText
+          text="Reda"
+          className="text-9xl font-semibold text-center hero__title"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
         <p className="hero__subtitle">Full-Stack Developer</p>
         <div className="mt-8 hero_elements">
           <button className="p-3 rounded bg-white text-black font-semibold hover:bg-gray-300 cursor-pointer transition-all">
