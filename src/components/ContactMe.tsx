@@ -1,5 +1,3 @@
-// import { contactme } from "../data/info.json";
-
 export function ContactMe() {
   return (
     <section id="contactMe" className="section ml-12">
