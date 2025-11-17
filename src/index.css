@@ -43,6 +43,10 @@ h4 {
   animation: fadeIn 2.2s ease-in;
 }
 
+.hero__title {
+  font-family: "ClashDisplay";
+}
+
 nav {
   animation: slideIn 2s ease;
 }
