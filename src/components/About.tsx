@@ -30,7 +30,7 @@ export function About() {
         </p>
         <div className="w-125 h-125 overflow-hidden rounded-lg">
           <img
-            src="../src/assets/lan.jpeg"
+            src="./src/assets/lan.jpeg"
             alt=""
             className="h-full w-full object-cover"
           />
