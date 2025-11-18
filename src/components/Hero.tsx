@@ -74,7 +74,7 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                mail
+                Mail
               </a>
               <a
                 href="tel:+32488981758"
