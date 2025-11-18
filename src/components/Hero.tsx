@@ -70,18 +70,18 @@ export function Hero() {
                 GitHub
               </a>
               <a
-                href="https://github.com/redasnkrs"
+                href="mailto:redadahmani34@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                mail
               </a>
               <a
-                href="https://github.com/redasnkrs"
+                href="tel:+32488981758"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                Phone
               </a>
             </li>
           </ul>
