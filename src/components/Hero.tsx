@@ -59,6 +59,33 @@ export function Hero() {
             </a>
           </button>
         </div>
+        <div className="z-500 mt-10">
+          <ul>
+            <li className=" flex items-center gap-5 justify-evenly">
+              <a
+                href="https://github.com/redasnkrs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://github.com/redasnkrs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://github.com/redasnkrs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );
