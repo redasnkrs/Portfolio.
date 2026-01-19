@@ -7,11 +7,8 @@ export default function App() {
 
   return (
     <>
-      {loading ? (
-        <Loader onComplete={() => setLoading(false)} />
-      ) : (
-        <HomePage />
-      )}
+      <HomePage />
+      {loading && <Loader onComplete={() => setLoading(false)} />}
     </>
   );
 }

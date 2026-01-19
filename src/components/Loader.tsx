@@ -33,14 +33,18 @@ export function Loader({ onComplete }: LoaderProps) {
   }, [progress, onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-white">
+    <div
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black text-white transition-opacity duration-500 ease-in-out ${
+        progress === 100 ? "opacity-0" : "opacity-100"
+      }`}
+    >
       <div className="font-custom text-6xl md:text-9xl font-bold tracking-tighter animate-pulse">
         {progress}%
       </div>
       <div className="mt-4 w-64 h-1 bg-white/20 rounded-full overflow-hidden">
-        <div 
-            className="h-full bg-white transition-all duration-75 ease-out"
-            style={{ width: `${progress}%` }}
+        <div
+          className="h-full bg-white transition-all duration-75 ease-out"
+          style={{ width: `${progress}%` }}
         />
       </div>
     </div>
