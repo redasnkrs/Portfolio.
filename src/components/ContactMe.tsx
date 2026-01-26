@@ -73,7 +73,7 @@ export function ContactMe() {
               <div className="mt-2.5">
                 <input
                   id="first-name"
-                  name="first-name"
+                  name="from_name"
                   type="text"
                   required
                   autoComplete="given-name"
@@ -91,7 +91,7 @@ export function ContactMe() {
               <div className="mt-2.5">
                 <input
                   id="last-name"
-                  name="last-name"
+                  name="last_name"
                   type="text"
                   required
                   autoComplete="family-name"
@@ -109,7 +109,7 @@ export function ContactMe() {
               <div className="mt-2.5">
                 <input
                   id="email"
-                  name="email"
+                  name="reply_to"
                   type="email"
                   required
                   autoComplete="email"
@@ -127,7 +127,7 @@ export function ContactMe() {
               <div className="mt-2.5">
                 <input
                   id="phone-number"
-                  name="phone-number"
+                  name="phone_number"
                   type="text"
                   placeholder="+32 482-914-78"
                   className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
