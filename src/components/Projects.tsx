@@ -1,4 +1,5 @@
 import { projects } from "../data/projects";
+import { Link } from "react-router-dom";
 
 export function Projects() {
   return (
@@ -9,12 +10,10 @@ export function Projects() {
       <div className="container-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((p) => (
-            <a
-              key={p.title}
-              className="group glass-card cursor-pointer p-6"
-              href={p.link || "#"}
-              target={p.link ? "_blank" : undefined}
-              rel={p.link ? "noreferrer" : undefined}
+            <Link
+              key={p.id}
+              to={`/project/${p.id}`}
+              className="group glass-card cursor-pointer p-6 block"
             >
               <p className="text-xl sm:text-2xl text-white">{p.title}</p>
               <p className="text-sm sm:text-base text-[rgba(255,255,255,0.7)] leading-relaxed mt-3">
@@ -30,7 +29,7 @@ export function Projects() {
               <div className="mt-5 text-sm sm:text-base text-[rgba(255,255,255,0.79)] opacity-80 group-hover:opacity-100 transition-opacity">
                 View Project →
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
