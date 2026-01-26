@@ -16,13 +16,23 @@ export function ContactMe() {
 
     if (!form.current) return;
 
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    console.log("Sending email with config:", {
+      serviceID: serviceID ? serviceID : "MISSING",
+      templateID: templateID ? templateID : "MISSING",
+      publicKey: publicKey ? publicKey : "MISSING",
+    });
+
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID",
+        serviceID || "YOUR_SERVICE_ID",
+        templateID || "YOUR_TEMPLATE_ID",
         form.current,
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY",
+          publicKey: publicKey || "YOUR_PUBLIC_KEY",
         }
       )
       .then(
@@ -39,7 +49,7 @@ export function ContactMe() {
           console.error("FAILED...", error);
           setStatus({
             type: "error",
-            message: "Failed to send message. Please try again later.",
+            message: `Failed to send message: ${error.text || "Unknown error"}. Please try again later.`,
           });
         }
       );
