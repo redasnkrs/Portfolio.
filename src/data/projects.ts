@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "A complex internal tool built for managing the production and sales workflow of 2D/3D crystal engraving. This dashboard allows resellers to place orders, track production status, and manage their invoices. It features data visualization for sales trends and a robust user permission system.",
     technologies: ["Next.js", "React", "TypeScript", "NodeJs"],
     images: [
-      "https://placehold.co/1920x1080/1a1a1a/FFF?text=Dashboard+Main",
+      "/assets/dashboard/D3D_dashboard.jpeg",
       "https://placehold.co/1920x1080/2a2a2a/FFF?text=Sales+Analytics",
       "https://placehold.co/1920x1080/3a3a3a/FFF?text=Order+Management",
     ],
