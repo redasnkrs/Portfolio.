@@ -33,11 +33,14 @@ export function Carousel({ images }: CarouselProps) {
   }, [currentIndex]);
 
   return (
-    <div className="relative h-[400px] sm:h-[500px] w-full m-auto group">
-      <div
-        style={{ backgroundImage: `url(${images[currentIndex]})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500 shadow-2xl border border-white/10"
-      ></div>
+    <div className="relative w-full m-auto group">
+      <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+        <img
+          src={images[currentIndex]}
+          alt={`Project slide ${currentIndex + 1}`}
+          className="w-full h-auto block"
+        />
+      </div>
 
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/50 text-white cursor-pointer hover:bg-black/70 transition-colors">

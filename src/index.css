@@ -10,6 +10,58 @@ html {
 
 body {
   @apply bg-black text-white font-mono;
+  --grid-color: rgba(255, 255, 255, 0.08);
+  --grid-color-strong: rgba(255, 255, 255, 0.12);
+  --grid-gap: 240px;
+  --grid-accent-step: 4;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--grid-color) 0px,
+      var(--grid-color) 1px,
+      transparent 1px,
+      transparent var(--grid-gap)
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--grid-color) 0px,
+      var(--grid-color) 1px,
+      transparent 1px,
+      transparent var(--grid-gap)
+    );
+  background-size: var(--grid-gap) 100%, 100% var(--grid-gap);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--grid-color-strong) 0px,
+      var(--grid-color-strong) 1px,
+      transparent 1px,
+      transparent calc(var(--grid-gap) * var(--grid-accent-step))
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--grid-color-strong) 0px,
+      var(--grid-color-strong) 1px,
+      transparent 1px,
+      transparent calc(var(--grid-gap) * var(--grid-accent-step))
+    );
 }
 
 /*
